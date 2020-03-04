@@ -112,9 +112,9 @@ REFERENCES
 Xun-yi Ren, Lin-juan Chen, Hai-shan Wan, "Homomorphic Encryption and Its Security Application", JDCTA:
 International Journal of Digital Content Technology and its Applications, Vol. 6, No. 7, pp. 305-311, 2012.
 
- 2.Nicholas D., Darrell B., Somsak S., “Home Automation using Cloud Network and Mobile Devices”, IEEE Southeastcon 2012, Proceedings of IEEE.
+  2.Nicholas D., Darrell B., Somsak S., “Home Automation using Cloud Network and Mobile Devices”, IEEE Southeastcon 2012, Proceedings of IEEE.
  
- 3.S.D.T. Kelly, N.K. Suryadevara, S.C. Mukhopadhyay, “Towards the Implementation of IoT for Environmental Condition Monitoring in Homes”, IEEE, Vol. 13, pp. 3846- 3853, 2013.
+  3.S.D.T. Kelly, N.K. Suryadevara, S.C. Mukhopadhyay, “Towards the Implementation of IoT for Environmental Condition Monitoring in Homes”, IEEE, Vol. 13, pp. 3846- 3853, 2013.
  
 
 
