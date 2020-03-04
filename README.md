@@ -1,4 +1,3 @@
-![g8](https://user-images.githubusercontent.com/23235363/75876461-6b45fc80-5e1e-11ea-93f4-56c7a71be07b.jpeg)
 
 INTRODUCTION
  
@@ -13,7 +12,16 @@ Specific Objectives:
 •	 avoiding water wastage in irrigation process.
 It also allows easy monitoring and visualization as the data from the sensors are sent to the client
 
-for more inof loot at the pdf file in this repository
+COMPONENTS REQUIRED:
+
+Hardware:
+
+	NodeMCU ESP8266
+ NodeMCU is an open source IoT platform. it includes firmware which runs on the ESP8266 Wi-Fi SoC from Expressive Systems, and hardware which is based on the ESP-12 module.
+ 
+
 
 FULL CIRCUIT 
 ![g81](https://user-images.githubusercontent.com/23235363/75876854-2373a500-5e1f-11ea-92ac-69da39176cda.jpeg)
+GROUP 8
+![g8](https://user-images.githubusercontent.com/23235363/75876461-6b45fc80-5e1e-11ea-93f4-56c7a71be07b.jpeg)
