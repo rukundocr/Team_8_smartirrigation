@@ -27,7 +27,8 @@ A simple soil moisture sensor for gardeners. Soil moisture sensors measure the v
 ![moisture](https://user-images.githubusercontent.com/23235363/75878166-db09b680-5e21-11ea-8c17-c2eb49008d83.JPG)
 
 	Water Pump Module
-
+	
+![waterpump](https://user-images.githubusercontent.com/23235363/75878364-24f29c80-5e22-11ea-890d-be47087f1055.JPG)
 
 
 FULL CIRCUIT 
