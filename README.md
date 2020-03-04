@@ -24,7 +24,9 @@ NodeMCU ESP8266
  Soil Moisture Sensor Module
 A simple soil moisture sensor for gardeners. Soil moisture sensors measure the volumetric water content in soil. Since the direct gravimetric measurement of free soil moisture requires removing, drying, and weighting of a sample, soil moisture sensors measure the volumetric water content indirectly by using some other property of the soil, such as electrical resistance, dielectric constant, or interaction with neutrons, as a proxy for the moisture content. The relation between the measured property and soil moisture must be calibrated and may vary depending on environmental factors such as soil type, temperature, or electric conductivity. Reflected microwave radiation is affected by the soil moisture and is used for remote sensing in hydrology and agriculture. Portable probe instruments can be used by farmers or gardeners.
 
-	Water Pump Module
+![moisture](https://user-images.githubusercontent.com/23235363/75878166-db09b680-5e21-11ea-8c17-c2eb49008d83.JPG)
+
+	Water Pump Module
 
 
 
