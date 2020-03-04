@@ -1,12 +1,12 @@
 IOT BASED SMART IRRIGATION PROJECT USING NODEMCU, MOISTURE SENSOR, DHT11 AND THINGSPEAK IOT CLOUD PLATFORM
 
-TEAM MEMBERS
+         TEAM MEMBERS
 
-UWIMANA Josephine                           215026137
-RUKUNDO Jean Claude                         220014156
-KANYAMUNEZA Marie Noella                    220012382
-MITSINDO Rene                               220014161
-UWIZEYE Marie Grace                         220014347
+       UWIMANA Josephine: 215026137
+       RUKUNDO Jean Claude:220014156
+       KANYAMUNEZA Marie Noella:220012382
+       MITSINDO Rene: 220014161
+       UWIZEYE Marie Grace:220014347
 
 
 
