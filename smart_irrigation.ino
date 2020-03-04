@@ -1,9 +1,15 @@
 // Robo India Tutorial 
 // Simple code upload the tempeature and humidity data using thingspeak.com
 // Hardware: NodeMCU,potentiometer
-
+#define BLYNK_PRINT Serial
+#include <BlynkSimpleEsp8266.h>
+char auth[] = "JKNVXMDWhnnBytGzuHY8IPtpNNiE7JUC"; //auth code from blynk 
 #include <ESP8266WiFi.h>
-#include "ThingSpeak.h"
+#include "ThingSpeak.h"  // thingspeak lib
+#include "DHT.h"   // include dht library
+#define DHTTYPE DHT22   // DHT 22  (AM2302), AM2321
+#define DHTPIN 2     // Digital pin connected to the DHT sensor
+DHT dht(DHTPIN, DHTTYPE);
 String apiKey = "BBAQJGBK6W11JRY4";     //  Enter your Write API key from ThingSpeak
 unsigned long channel =997843;//Replace with your own ThingSpeak Account Channle ID
 const char *ssid =  "iphone";     // replace with your wifi ssid and wpa2 key
@@ -17,11 +23,24 @@ int pumpin =D1;
 float temp;
 float humidity;
 int pump_status =0;
+BlynkTimer timer;
 WiFiClient client;
- 
+ void sendSensor()
+{
+ Blynk.virtualWrite(V1, moisture);// virtual pin 1 will display moisture
+ delay (200);
+ Blynk.virtualWrite(V2, temperature);//virtual pin2 will display temperature
+ delay (200);
+ Blynk.virtualWrite(V3, humidity);// virtual pin 3 will display humidity
+}
 void setup() 
 {
+  //----start blink
+  Blynk.begin(auth, ssid, pass);
+  timer.setInterval(1000L, sendSensor);
+  //---end blind--------
   Serial.begin(115200);
+  dht.begin();
   delay(100);   
   pinMode(pumpin, OUTPUT);
   digitalWrite(pumpin, 0);
@@ -51,6 +70,10 @@ void setup()
  
 void loop() 
 {
+  
+ Blynk.run();
+ timer.run();
+  
  //get the last data of the fields
 int pump = ThingSpeak.readFloatField(channel, Water_Pump);
 if(pump == 1){                                               // turn ON motor if thingspeak pump field = 1
@@ -62,9 +85,24 @@ if(pump == 1){                                               // turn ON motor if
     Serial.println("WATER PUMP  is Off..!");
   }
   
-  temp= 50;
-  humidity=100;
+// --------------------- dht codes 
+float humidity = dht.readHumidity();
+// Read temperature as Celsius (the default)
+float temperature = dht.readTemperature();
+
+  // Check if any reads failed and exit early (to try again).
+  if (isnan(h) || isnan(t) || isnan(f)) {
+    Serial.println(F("Failed to read from DHT sensor!"));
+    return;
+  }
+
+//----------------------end dht code----------------
+
+//------------moisture sensor reading-------------- 
   moisture = analogRead(analog_ip); // Analog Values 0 to 1023
+ //------------end moisture sensor reading------------------
+
+ //----watering process depending on the moisture sensor reading------------
   if(moisture > 650){
     digitalWrite(pumpin, HIGH);
     Serial.println("WATER PUMP IS  is On..!");
@@ -80,7 +118,9 @@ if(pump == 1){                                               // turn ON motor if
   Serial.println (temp);
   Serial.println("Humidity:");
   Serial.println (humidity);
-  
+ // -----------end watering code -------------------
+
+ //---------------  thingspeak code to send data to the thingspeak server 
 
                          if (client.connect(server,80))   //   "184.106.153.149" or api.thingspeak.com
                       {  
@@ -113,7 +153,7 @@ if(pump == 1){                                               // turn ON motor if
           client.stop();
  
           Serial.println("Waiting...");
-  
+  //--------------end sending to thingspeak-----------------------------
   // thingspeak needs minimum 15 sec delay between updates, i've set it to 30 seconds
   delay(10000);
 }
