@@ -10,3 +10,5 @@ Specific Objectives:
 •	The proposed project aims to ease the process of irrigation by supplying water when farm is dry without human presence and
 •	 avoiding water wastage in irrigation process.
 It also allows easy monitoring and visualization as the data from the sensors are sent to the client
+
+for more inof loot at the pdf file in this repository
