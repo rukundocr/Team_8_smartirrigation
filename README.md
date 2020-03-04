@@ -1,5 +1,15 @@
 IOT BASED SMART IRRIGATION PROJECT USING NODEMCU, MOISTURE SENSOR, DHT11 AND THINGSPEAK IOT CLOUD PLATFORM
 
+TEAM MEMBERS
+
+UWIMANA Josephine                           215026137
+RUKUNDO Jean Claude                         220014156
+KANYAMUNEZA Marie Noella                    220012382
+MITSINDO Rene                               220014161
+UWIZEYE Marie Grace                         220014347
+
+
+
                     INTRODUCTION
  
 New technologies are helping in building automated systems resulting in a huge reduction of human work done. Watering is a crucial factor in farming and sometimes, problems occur if not well regulated due to overwatering or underwatering. This is the reason to be of our proposed system “Smart irrigation” to avoid all those incidents and ensure smart farming through smart irrigation.
