@@ -22,6 +22,7 @@ NodeMCU ESP8266
  ![nodemcu](https://user-images.githubusercontent.com/23235363/75878001-882fff00-5e21-11ea-8770-2d16563cb1b0.JPG)
  
  Soil Moisture Sensor Module
+ 
 A simple soil moisture sensor for gardeners. Soil moisture sensors measure the volumetric water content in soil. Since the direct gravimetric measurement of free soil moisture requires removing, drying, and weighting of a sample, soil moisture sensors measure the volumetric water content indirectly by using some other property of the soil, such as electrical resistance, dielectric constant, or interaction with neutrons, as a proxy for the moisture content. The relation between the measured property and soil moisture must be calibrated and may vary depending on environmental factors such as soil type, temperature, or electric conductivity. Reflected microwave radiation is affected by the soil moisture and is used for remote sensing in hydrology and agriculture. Portable probe instruments can be used by farmers or gardeners.
 
 ![moisture](https://user-images.githubusercontent.com/23235363/75878166-db09b680-5e21-11ea-8c17-c2eb49008d83.JPG)
@@ -31,6 +32,7 @@ A simple soil moisture sensor for gardeners. Soil moisture sensors measure the v
 ![waterpump](https://user-images.githubusercontent.com/23235363/75878364-24f29c80-5e22-11ea-890d-be47087f1055.JPG)
 
 Relay Module
+
 A relay is an electrically operated switch. Many relays use an electromagnet to mechanically operate a switch, but other operating principles are also used, such as solid-state relays. Relays are used where it is necessary to control a circuit by a separate low-power signal, or where several circuits must be controlled by one signal. The first relays were used in long distance telegraph circuits as amplifiers: they repeated the signal coming in from one circuit and re-transmitted it on another circuit.
 
 ![relay](https://user-images.githubusercontent.com/23235363/75879018-430ccc80-5e23-11ea-941c-8837d661ca79.JPG)
@@ -41,7 +43,7 @@ Humidity Sensor is one of the most important devices that has been widely in con
 
 ![dht11](https://user-images.githubusercontent.com/23235363/75879069-5f106e00-5e23-11ea-8401-2998fc054a47.JPG)
 
-Bread board
+BREADBOARD
 
 A breadboard is a rectangular board with many mounting holes. They are used for creating electrical connections between electronic components and single board computers or microcontrollers such as Arduino and Raspberry Pi. The connections aren't permanent and they can be removed and placed again.
 
@@ -55,11 +57,12 @@ A jump wire (also known as jumper wire, or jumper) is an electrical wire, or gro
 
 METHODOLOGY 
 
-Sensor and data acquisition 
+Sensor and Data Acquisition 
 
 This stage consists of the moisture sensor to measure the amount of water in the soil and DHT11 sensor for continuously measures   temperature and humidity of the field. The sensors convert moisture, humidity and temperature content into electronic signals and send them to microcontroller. 
 
 Control 
+
 The microcontroller used in this study is node MCU 8266. Its work is to process the data from sensors and control the status of the pump depending to the sensed data. node MCU 8266 receives measures value from two sensors in form of analog voltages and digitizes them. It then computes the appropriate control scheme meant to implement the irrigation based on the soil moisture, humidity and temperature of the field. The controller output is sent as a digital control to the irrigation pumps via the relay. The sensed data obtained are transmitted through wireless transmission and the user can monitor them through his or her mobile by using mobile application platform. In this project Blynk and thinkspeak iot cloudpage have been used as mobile application platform to read, store, and visualize sensor data and control hardware remotely. If soil moisture, temperature and humidity is less than the threshold value the pump is switched ON and if the soil moisture, temperature and humidity exceed the threshold value the pump is switched OFF.  
 
 IMPLEMENTATION
