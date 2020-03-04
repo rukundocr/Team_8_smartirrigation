@@ -58,6 +58,13 @@ A jump wire (also known as jumper wire, or jumper) is an electrical wire, or gro
 
 ![jumpwires](https://user-images.githubusercontent.com/23235363/75879158-8f580c80-5e23-11ea-8c55-019c8f6cb02e.JPG)
 
+         SOFTWARE 
+	  
+1.ARDUINO IDE 
+2.BLYNK APPP
+3.Thingspeak cloud platform
+
+
          METHODOLOGY 
 
           Sensor and Data Acquisition 
