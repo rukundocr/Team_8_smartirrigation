@@ -61,9 +61,9 @@ A jump wire (also known as jumper wire, or jumper) is an electrical wire, or gro
          SOFTWARE 
 we have used the following software during our project implementation:
 
-Adruino IDE
-Blynk app
-Thingspeak iOt Cloud platform
+1.Adruino IDE
+2.Blynk app
+3.Thingspeak iOt Cloud platform
 
 
          METHODOLOGY 
