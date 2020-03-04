@@ -14,6 +14,6 @@ Specific Objectives:
 It also allows easy monitoring and visualization as the data from the sensors are sent to the client
 
 for more inof loot at the pdf file in this repository
-https://github.com/rukundocr/smartirrigation_group8/blob/master/SMART%20IRRIGATION%20PROJECT.pdf
+
 FULL CIRCUIT 
 ![g81](https://user-images.githubusercontent.com/23235363/75876854-2373a500-5e1f-11ea-92ac-69da39176cda.jpeg)
